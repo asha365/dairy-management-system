@@ -8,7 +8,7 @@
  * 6. initialize firebase and here export app
  * 7. install css framework bootstrap and react bootstrap using command (npm install react-bootstrap bootstrap
  * 8. make sure to import bootstrap css in the index.js
- * 9. router setup 
+ * 9. router setup
  *
  * 
  */
@@ -16,5 +16,7 @@
 
 /**
  * ROUTER SETUP
- * 1. 
+ * 1. create a folder in the src Routes> Routes > Routes.js 
+ * 2. import RouterProvider in the app.js
+ * 3. Routes.js set path, element, children 
  */
