@@ -14,6 +14,9 @@
  * 12. load all categories data inside the dairy-management-server
  * 13. RightSideNav import button from react bootstrap
  * 14. use react icon for install react-icons using command (npm install react-icons --save)
+ * 15. create google and facebook login button
+ * 16. create farm carousel
+ * 17. Navigation bar 
  *
  * 
  */
