@@ -16,8 +16,12 @@
  * 14. use react icon for install react-icons using command (npm install react-icons --save)
  * 15. create google and facebook login button
  * 16. create farm carousel
- * 17. Navigation bar 
- *
+ * 17. Navigation bar
+ * 18. complete LeftSideNav , RightSideNav, and Header or navbar 
+ * 19. from backend data load 
+ * 20. show loading data in card 
+ * 21. card pick react bootstrap
+ * 22. create a component inside the shared (InfoSummaryCard)
  * 
  */
 
@@ -31,7 +35,13 @@
  * 6. categories.json file create , create data for dairy-management-system 
  * 7. data load client side
  * 8. install cors for error handle using command(npm install cors)
- * 
+ * 9. dairy-management-system-server to send github
+ * 10. command line: git init
+ * 11. create a file .gitignore
+ * 12. create json file dms.json
+ * 13. create api for dms data load
+ * 14. create api dairy management system server
+ * 15. server side to client side data load using api
  */
 
 /**

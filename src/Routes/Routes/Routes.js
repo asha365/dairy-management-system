@@ -2,7 +2,7 @@ import {createBrowserRouter} from 'react-router-dom';
 import Main from '../../layout/Main';
 import Category from '../../Pages/Category/Category/Category';
 import Home from '../../Pages/Home/Home/Home';
-import News from '../../Pages/News/News/News';
+import Dms from '../../Pages/Dms/Dms/Dms';
 export const routes = createBrowserRouter([
     {
         path: '/',
@@ -10,15 +10,18 @@ export const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch('http://localhost:5000/dms/')
             },
             {
                 path: '/category/:id',
-                element: <Category></Category>
+                element: <Category></Category>,
+                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
             },
             {
-                path: '/news/:id',
-                element: <News></News>
+                path: '/dms/:id',
+                element: <Dms></Dms>,
+                loader: ({params}) => fetch(`http://localhost:5000/dms/${params.id}`)
             }
         ]
     }
