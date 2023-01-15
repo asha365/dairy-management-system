@@ -25,6 +25,8 @@
  * 23. data load and show in the home page using destructuring
  * 24. data load and data customize complete animal health
  * 25. farm business management customize data
+ * 26. Read more click show detail information
+ * 27. 
  * 
  */
 
