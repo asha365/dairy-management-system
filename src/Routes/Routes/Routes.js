@@ -3,6 +3,8 @@ import Main from '../../layout/Main';
 import Category from '../../Pages/Category/Category/Category';
 import Home from '../../Pages/Home/Home/Home';
 import Dms from '../../Pages/Dms/Dms/Dms';
+import Login from '../../Pages/Login/Login/Login';
+import Register from '../../Pages/Login/Register/Register';
 export const routes = createBrowserRouter([
     {
         path: '/',
@@ -22,6 +24,14 @@ export const routes = createBrowserRouter([
                 path: '/dms/:id',
                 element: <Dms></Dms>,
                 loader: ({params}) => fetch(`http://localhost:5000/dms/${params.id}`)
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     }
