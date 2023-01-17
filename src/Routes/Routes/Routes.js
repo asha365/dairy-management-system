@@ -5,6 +5,7 @@ import Home from '../../Pages/Home/Home/Home';
 import Dms from '../../Pages/Dms/Dms/Dms';
 import Login from '../../Pages/Login/Login/Login';
 import Register from '../../Pages/Login/Register/Register';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 export const routes = createBrowserRouter([
     {
         path: '/',
@@ -22,7 +23,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/dms/:id',
-                element: <Dms></Dms>,
+                element: <PrivateRoute><Dms></Dms></PrivateRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/dms/${params.id}`)
             },
             {
