@@ -6,6 +6,7 @@ import Dms from '../../Pages/Dms/Dms/Dms';
 import Login from '../../Pages/Login/Login/Login';
 import Register from '../../Pages/Login/Register/Register';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import TermsAndConditions from '../../Pages/Others/TermsAndConditions/TermsAndConditions';
 export const routes = createBrowserRouter([
     {
         path: '/',
@@ -33,6 +34,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/terms',
+                element: <TermsAndConditions></TermsAndConditions>
             }
         ]
     }
