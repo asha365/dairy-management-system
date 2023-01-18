@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBKPRk_L_JvhjtpAkBmJYgQrpAU3ycSBv4",
-    authDomain: "dairy-management-system-6fabf.firebaseapp.com",
-    projectId: "dairy-management-system-6fabf",
-    storageBucket: "dairy-management-system-6fabf.appspot.com",
-    messagingSenderId: "266142159421",
-    appId: "1:266142159421:web:49c937a3a16cb95ecc1054"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
