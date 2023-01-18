@@ -7,7 +7,7 @@ import { FaRegBookmark, FaShareAlt } from "react-icons/fa";
 
 const InfoSummaryCard = ({info}) => {
     const {_id, title, author, topics, details, image_url} = info;
-    console.log(info);
+    // console.log(info);
     return (
         <Card className="mb-5">
             <Card.Header className='d-flex justify-content-between align-items-center'>
@@ -25,9 +25,9 @@ const InfoSummaryCard = ({info}) => {
                 <Card.Text>
                     {
                         details.length > 250 ?
-                        <p>{details.slice(0, 250) + '...'} <Link to={`/dms/${_id}`}>Read More</Link></p>
+                        <>{details.slice(0, 250) + '...'} <Link to={`/dms/${_id}`}>Read More</Link></>
                         :
-                        <p>{details}</p>
+                        details
                     }
                 </Card.Text>
             </Card.Body>

@@ -29,7 +29,10 @@
  * 27. set authContext and auth provider to share auth info
  * 28. set auth context and auth provider and implement google sign in and email, password
  * 29. login page error show
- * 30. 
+ * 30. complete login form
+ * 31. send email verification
+ * 32. email verification massage show inside of registration page for user its for visit react hot toast install this npm install react-hot-toast
+ * 33.  
  */
 
 /**
