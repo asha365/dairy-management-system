@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { authContext } from '../../../contexts/AuthProvider/AuthProvider';
@@ -7,10 +7,13 @@ import { authContext } from '../../../contexts/AuthProvider/AuthProvider';
 const Profile = () => {
     const {user} = useContext(authContext);
     const [name, setName] = useState(user.displayName);
+    const photoURLRef = useRef(user.photoURL);
 
     const handleSubmit = event =>{
         event.preventDefault();
-        console.log(name);
+        // console.log(name);
+        console.log(photoURLRef.current.value);
+
     }
 
     const handleNameChange = event =>{
@@ -30,7 +33,7 @@ const Profile = () => {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Photo URL</Form.Label>
-            <Form.Control defaultValue={user?.photoURL} type="text" placeholder="photo URL" />
+            <Form.Control ref={photoURLRef} defaultValue={user?.photoURL} type="text" placeholder="photo URL" />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
