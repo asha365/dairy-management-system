@@ -16,17 +16,17 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/dms/')
+                loader: () => fetch('https://dairy-management-system-server.vercel.app/dms/')
             },
             {
                 path: '/category/:id',
                 element: <Category></Category>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({params}) => fetch(`https://dairy-management-system-server.vercel.app/category/${params.id}`)
             },
             {
                 path: '/dms/:id',
                 element: <PrivateRoute><Dms></Dms></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/dms/${params.id}`)
+                loader: ({params}) => fetch(`https://dairy-management-system-server.vercel.app/dms/${params.id}`)
             },
             {
                 path: '/login',
